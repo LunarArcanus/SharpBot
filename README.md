@@ -1,0 +1,2 @@
+# SharpBot
+C# IRC bot
