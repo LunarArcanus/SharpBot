@@ -1,0 +1,26 @@
+#!/bin/bash
+
+SOURCE="source"
+LIB="libs"
+BIN="bin"
+OUT="bot.exe"
+
+mkdir -p $BIN
+mcs -target:library -r:"$LIB/AIMLbot.dll" -out:"$LIB/AI.dll" "$SOURCE/ai.cs"
+mcs -target:library -r:"$LIB/HtmlAgilityPack.dll" -out:"$LIB/Plugins.dll" "$SOURCE/pluginloader.cs"
+mcs -target:library -r:System.Configuration -out:"$LIB/Constants.dll" "$SOURCE/constants.cs"
+mcs -lib:$LIB -out:"$BIN/$OUT" \
+                           -r:"$LIB/ChatSharp.dll" \
+                           -r:"$LIB/Constants.dll" \
+                           -r:"$LIB/AI.dll" \
+                           -r:"$LIB/AIMLbot.dll" \
+                           -r:"$LIB/Plugins.dll" \
+                           -r:"$LIB/HtmlAgilityPack.dll" \
+    "$SOURCE/howlbot.cs"
+cp "$LIB/." "$BIN/" -R
+if [ -e "$BIN/$OUT.config" ];
+then
+  echo All done.
+else
+  echo No config file found!
+fi

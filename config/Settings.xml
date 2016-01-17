@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <item name="aimldirectory" value="aiml"/>
+  <item name="configdirectory" value="config"/>
+  <item name="logdirectory" value="logs"/>
+  <item name="splittersfile" value="Splitters.xml"/>
+  <item name="person2substitutionsfile" value="Person2Substitutions.xml"/>
+  <item name="personsubstitutionsfile" value="PersonSubstitutions.xml"/>
+  <item name="gendersubstitutionsfile" value="GenderSubstitutions.xml"/>
+  <item name="defaultpredicates" value="DefaultPredicates.xml"/>
+  <item name="substitutionsfile" value="Substitutions.xml"/>
+  <item name="maxlogbuffersize" value="64"/>
+  <item name="notacceptinguserinputmessage" value="This bot is currently set to not accept user input."/>
+  <item name="stripperregex" value="[^0-9a-zA-Z]"/>
+  <item name="version" value="Unknown"/>
+  <item name="name" value="Bot"/>
+  <item name="botmaster" value="BotMaster"/>
+  <item name="master" value="Master"/>
+  <item name="author" value="Me"/>
+  <item name="location" value="Closet"/>
+  <item name="gender" value="male"/>
+  <item name="birthday" value="1000BC"/>
+  <item name="birthplace" value="Moon"/>
+  <item name="website" value="http://google.com"/>
+  <item name="islogging" value="true"/>
+  <item name="willcallhome" value="false"/>
+  <item name="timeout" value="10000000"/>
+  <item name="timeoutmessage" value="ERROR: The request has timed out."/>
+  <item name="culture" value="en-US"/>
+  <item name="religion" value="Athiest"/>
+  <item name="favoritefood" value="electricity"/>
+  <item name="favoritecolor" value="Black"/>
+  <item name="favoriteactor" value="Charlie Chaplin"/>
+  <item name="nationality" value="citizen of the world"/>
+  <item name="forfun" value="chat on the Internet"/>
+  <item name="kindmusic" value="Metal"/>
+  <item name="sign" value="Aquarius"/>
+  <item name="phylum" value="Computer"/>
+  <item name="friend" value="Nicholas"/>
+  <item name="talkabout" value="all sorts of things"/>
+  <item name="looklike" value="thousands of lines of computer code"/>
+  <item name="question" value="How are things?"/>
+  <item name="orientation" value="I am not really interested in sex"/>
+  <item name="ethics" value="I take an objectivist outlook"/>
+  <item name="emotions" value="I don't have emotions"/>
+  <item name="feelings" value="I don't have feelings"/>
+</root>
